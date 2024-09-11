@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PSjoon/Contador-Incrementador-LinkToU/static/css/main.9dcd01b4.css",
+    "main.js": "/PSjoon/Contador-Incrementador-LinkToU/static/js/main.fab23387.js",
+    "static/js/453.b8b27136.chunk.js": "/PSjoon/Contador-Incrementador-LinkToU/static/js/453.b8b27136.chunk.js",
+    "index.html": "/PSjoon/Contador-Incrementador-LinkToU/index.html",
+    "main.9dcd01b4.css.map": "/PSjoon/Contador-Incrementador-LinkToU/static/css/main.9dcd01b4.css.map",
+    "main.fab23387.js.map": "/PSjoon/Contador-Incrementador-LinkToU/static/js/main.fab23387.js.map",
+    "453.b8b27136.chunk.js.map": "/PSjoon/Contador-Incrementador-LinkToU/static/js/453.b8b27136.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dcd01b4.css",
+    "static/js/main.fab23387.js"
+  ]
+}
