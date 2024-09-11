@@ -1,8 +1,15 @@
 import { useState, useEffect } from "react"
 
 export function Counter() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(() => {
+    const saveCount = localStorage.getItem("count")
+    return saveCount !== null ? parseInt(saveCount, 10) : 0
+  })
   const [error, setError] = useState("")
+
+  useEffect(() => {
+    localStorage.setItem("count", count.toString())
+  }, [count])
 
   const handleIncrement = () => {
     setCount(count + 1)

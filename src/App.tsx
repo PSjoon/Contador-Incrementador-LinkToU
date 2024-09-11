@@ -1,5 +1,5 @@
-import "./App.css"
 import { Counter } from "./utils/Counter"
+import { Header } from "./components/Header"
 
 function App() {
   const { count, error, handleIncrement, handleDecrement, handleReset } =
@@ -7,19 +7,21 @@ function App() {
 
   return (
     <>
+      <Header />
+
       <main className="container">
-        <p>{count}</p>
+        <p className="counter-value">{count}</p>
         <section className="section">
-          <button type="button" className="button" onClick={handleIncrement}>
+          <button type="button" id="increment" onClick={handleIncrement}>
             Incrementar
           </button>
-          <button type="button" className="button" onClick={handleDecrement}>
+          <button type="button" id="decrement" onClick={handleDecrement}>
             Decrementar
           </button>
-          <button type="button" className="button" onClick={handleReset}>
+          <button type="button" id="reset" onClick={handleReset}>
             Resetar
           </button>
-          {error && <p style={{ color: "red" }}>{error}</p>}
+          {error && <p className="error">{error}</p>}
         </section>
       </main>
     </>
