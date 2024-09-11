@@ -1,7 +1,7 @@
 {
   "name": "contador-incrementador",
   "version": "0.1.0",
-  "homepage": "https://github.com/PSjoon/Contador-Incrementador-LinkToU",
+  "homepage": "https://psjoon.github.io/Contador-Incrementador-LinkToU/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
