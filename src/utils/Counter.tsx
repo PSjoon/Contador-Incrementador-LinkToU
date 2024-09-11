@@ -7,10 +7,6 @@ export function Counter() {
   })
   const [error, setError] = useState("")
 
-  useEffect(() => {
-    localStorage.setItem("count", count.toString())
-  }, [count])
-
   const handleIncrement = () => {
     setCount(count + 1)
   }
@@ -33,6 +29,10 @@ export function Counter() {
       setError("")
     }
   }, [count, error])
+
+  useEffect(() => {
+    localStorage.setItem("count", count.toString())
+  }, [count])
 
   return { count, error, handleIncrement, handleDecrement, handleReset }
 }
